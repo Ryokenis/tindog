@@ -1,27 +1,14 @@
-#title {
-  background-color: #ff4c68;
-  color: white;
-}
-
-.body {
+body {
   font-family: 'Montserrat';
-  overflow: hidden;
+  text-align: center;
 }
 
 .container-fluid {
   padding: 3% 15% 7%;
 }
 
-h1 {
-  font-family: 'Montserrat';
-  font-weight: bold;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
 h2 {
   font-size: 3rem;
-  font-family: 'Montserrat';
   font-weight: bold;
   line-height: 1.5;
 }
@@ -46,12 +33,25 @@ h2 {
   font-weight: 300;
 }
 
+/* Headings */
+#title h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
 /* Download Buttons */
 .download-button {
   margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
+/* Title Section */
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+
 .title-image {
   width: 18%;
   transform: rotate(25deg);
@@ -68,7 +68,6 @@ h2 {
 }
 
 .feature-box {
-  text-align: center;
   margin: 2rem 0;
 }
 
@@ -111,7 +110,6 @@ h2 {
 /* Press */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -123,7 +121,6 @@ h2 {
 /* Pricing */
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 .card {
   margin: 1rem 0;
@@ -137,7 +134,6 @@ h2 {
 #cta {
   background-color: #ff4c68;
   padding: 7% 15%;
-  text-align: center;
 }
 
 #cta h3 {
@@ -149,7 +145,6 @@ h2 {
 /* Footer */
 #footer {
   padding: 3% 0;
-  text-align: center;
 }
 
 #footer i {
@@ -162,12 +157,28 @@ h2 {
 
 /* Mobile Website Media Query */
 @media (max-width: 1028px) {
-  #title {
+  #title h1 {
     text-align: center;
   }
 
   .title-image {
     position: static;
     transform: rotate(0);
+  }
+
+  .container-fluid {
+    padding: 3% 3% 7%;
+  }
+  #features {
+    padding: 7% 15%;
+  }
+
+  #pricing {
+    padding: 3%;
+  }
+
+  #cta {
+    background-color: #ff4c68;
+    padding: 7% 3%;
   }
 }

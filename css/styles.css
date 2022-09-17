@@ -1,3 +1,13 @@
+@media (max-width: 1027px) {
+  #features h3 {
+    font-size: 2.5em;
+  }
+
+  #features p {
+    font-size: 1.5em;
+  }
+}
+
 body {
   font-family: 'Montserrat';
   text-align: center;
